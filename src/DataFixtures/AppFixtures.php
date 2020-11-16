@@ -15,74 +15,74 @@ class AppFixtures extends Fixture
         $csv->setDelimiter(';');
 
         $results = $csv->fetchAssoc();
-        foreach ($results as $row){
+        foreach ($results as $key=>$row){
 var_dump($row);
             $tirage = new Tirage();
-            $tirage->setAnneeNumeroDeTirage($row[' annee_numero_de_tirage']);
-            $tirage->setJourDeTirage(['jour_de_tirag']);
-            $tirage->setDateDeTirage(new \DateTime($row['date_de_tirage']));
-            $tirage->setDateDeForclusion(new \DateTime($row['date_de_forclusion']));
-            $tirage->setBoule1($row["boule_1"]);
-            $tirage->setBoule2($row["boule_2"]);
-            $tirage->setBoule3($row["boule_3"]);
-            $tirage->setBoule4($row["boule_4"]);
-            $tirage->setBoule5($row["boule_5"]);
-            $tirage->setNumeroChance($row(['numero_chance']));
-            $tirage->setCombinaisonGagnanteEnOrdreCroissant($row['combinaison_gagnante_en_ordre_croissant']);
+            $tirage->setAnneeNumeroDeTirage($key["annee_numero_de_tirage"][$row]);
+            $tirage->setJourDeTirage($key["jour_de_tirag"][$row]);
+            $tirage->setDateDeTirage(new \DateTime($key["date_de_tirage"][$row]));
+            $tirage->setDateDeForclusion(new \DateTime($key["date_de_forclusion"][$row]));
+            $tirage->setBoule1($key["boule_1"][$row]);
+            $tirage->setBoule2($key["boule_2"][$row]);
+            $tirage->setBoule3($key["boule_3"][$row]);
+            $tirage->setBoule4($key["boule_4"][$row]);
+            $tirage->setBoule5($key["boule_5"][$row]);
+            $tirage->setNumeroChance($key(['numero_chance'][$row]));
+            $tirage->setCombinaisonGagnanteEnOrdreCroissant($key['combinaison_gagnante_en_ordre_croissant'][$row]);
 
-            $tirage->setNombreDeGagnantAuRang1($row['nombre_de_gagnant_au_rang1']);
-            $tirage->setRapportDuRang1($row['rapport_du_rang1']);
+            $tirage->setNombreDeGagnantAuRang1($key['nombre_de_gagnant_au_rang1'][$row]);
+            $tirage->setRapportDuRang1($key['rapport_du_rang1'][$row]);
 
-            $tirage->setNombreDeGagnantAuRang2($row['nombre_de_gagnant_au_rang2']);
-            $tirage->setRapportDuRang2($row['rapport_du_rang2']);
+            $tirage->setNombreDeGagnantAuRang2($key['nombre_de_gagnant_au_rang2'][$row]);
+            $tirage->setRapportDuRang2($key['rapport_du_rang2'][$row]);
 
-            $tirage->setNombreDeGagnantAuRang3($row['nombre_de_gagnant_au_rang3']);
-            $tirage->setRapportDuRang3($row['rapport_du_rang3']);
+            $tirage->setNombreDeGagnantAuRang3($key['nombre_de_gagnant_au_rang3'][$row]);
+            $tirage->setRapportDuRang3($key['rapport_du_rang3'][$row]);
 
-            $tirage->setNombreDeGagnantAuRang4($row['nombre_de_gagnant_au_rang4']);
-            $tirage->setRapportDuRang4($row['rapport_du_rang4']);
+            $tirage->setNombreDeGagnantAuRang4($key['nombre_de_gagnant_au_rang4'][$row]);
+            $tirage->setRapportDuRang4($key['rapport_du_rang4'][$row]);
 
-            $tirage->setNombreDeGagnantAuRang5($row['nombre_de_gagnant_au_rang5']);
-            $tirage->setRapportDuRang5($row['rapport_du_rang5']);
+            $tirage->setNombreDeGagnantAuRang5($key['nombre_de_gagnant_au_rang5'][$row]);
+            $tirage->setRapportDuRang5($key['rapport_du_rang5'][$row]);
 
-            $tirage->setNombreDeGagnantAuRang6($row['nombre_de_gagnant_au_rang6']);
-            $tirage->setRapportDuRang6($row['rapport_du_rang6']);
+            $tirage->setNombreDeGagnantAuRang6($key['nombre_de_gagnant_au_rang6'][$row]);
+            $tirage->setRapportDuRang6($key['rapport_du_rang6'][$row]);
 
-            $tirage->setNombreDeGagnantAuRang7($row['nombre_de_gagnant_au_rang7']);
-            $tirage->setRapportDuRang7($row['rapport_du_rang7']);
+            $tirage->setNombreDeGagnantAuRang7($key['nombre_de_gagnant_au_rang7'][$row]);
+            $tirage->setRapportDuRang7($key['rapport_du_rang7'][$row]);
 
-            $tirage->setNombreDeGagnantAuRang8($row['nombre_de_gagnant_au_rang8']);
-            $tirage->setRapportDuRang8($row['rapport_du_rang8']);
+            $tirage->setNombreDeGagnantAuRang8($key['nombre_de_gagnant_au_rang8'][$row]);
+            $tirage->setRapportDuRang8($key['rapport_du_rang8'][$row]);
 
-            $tirage->setNombreDeGagnantAuRang9($row['nombre_de_gagnant_au_rang9']);
-            $tirage->setRapportDuRang9($row['rapport_du_rang9']);
+            $tirage->setNombreDeGagnantAuRang9($key['nombre_de_gagnant_au_rang9'][$row]);
+            $tirage->setRapportDuRang9($key['rapport_du_rang9'][$row]);
 
-            $tirage->setNombreDeCodesGagnants($row['nombre_de_codes_gagnants']);
-            $tirage->setRapportCodesGagnants($row['rapport_codes_gagnants']);
-            $tirage->setCodesGagnants($row['codes_gagnants']);
+            $tirage->setNombreDeCodesGagnants($key['nombre_de_codes_gagnants'][$row]);
+            $tirage->setRapportCodesGagnants($key['rapport_codes_gagnants'][$row]);
+            $tirage->setCodesGagnants($key['codes_gagnants'][$row]);
 
-            $tirage->setBoule1SecondTirage($row['boule_1_second_tirage']);
-            $tirage->setBoule2SecondTirage($row['boule_2_second_tirage']);
-            $tirage->setBoule3SecondTirage($row['boule_3_second_tirage']);
-            $tirage->setBoule4SecondTirage($row['boule_4_second_tirage']);
-            $tirage->setBoule5SecondTirage($row['boule_5_second_tirage']);
+            $tirage->setBoule1SecondTirage($key['boule_1_second_tirage'][$row]);
+            $tirage->setBoule2SecondTirage($key['boule_2_second_tirage'][$row]);
+            $tirage->setBoule3SecondTirage($key['boule_3_second_tirage'][$row]);
+            $tirage->setBoule4SecondTirage($key['boule_4_second_tirage'][$row]);
+            $tirage->setBoule5SecondTirage($key['boule_5_second_tirage'][$row]);
 
-            $tirage->setCombinaisonGagnanteEnOrdreCroissant($row['combinaison_gagnant_second_tirage_en_ordre_croissant']);
+            $tirage->setCombinaisonGagnanteEnOrdreCroissant($key['combinaison_gagnant_second_tirage_en_ordre_croissant'][$row]);
 
-            $tirage->setNombreDeGagnantAuRang1SecondTirage($row['nombre_de_gagnant_au_rang_1_second_tirage']);
-            $tirage->setRapportDuRang1SecondTirage($row['rapport_du_rang1_second_tirage']);
+            $tirage->setNombreDeGagnantAuRang1SecondTirage($key['nombre_de_gagnant_au_rang_1_second_tirage'][$row]);
+            $tirage->setRapportDuRang1SecondTirage($key['rapport_du_rang1_second_tirage'][$row]);
 
-            $tirage->setNombreDeGagnantAuRang2SecondTirage($row['nombre_de_gagnant_au_rang_2_second_tirage']);
-            $tirage->setRapportDuRang2SecondTirage($row['rapport_du_rang2_second_tirage']);
+            $tirage->setNombreDeGagnantAuRang2SecondTirage($key['nombre_de_gagnant_au_rang_2_second_tirage'][$row]);
+            $tirage->setRapportDuRang2SecondTirage($key['rapport_du_rang2_second_tirage'][$row]);
 
-            $tirage->setNombreDeGagnantAuRang3SecondTirage($row['nombre_de_gagnant_au_rang_3_second_tirage']);
-            $tirage->setRapportDuRang3SecondTirage($row['rapport_du_rang3_second_tirage']);
+            $tirage->setNombreDeGagnantAuRang3SecondTirage($key['nombre_de_gagnant_au_rang_3_second_tirage'][$row]);
+            $tirage->setRapportDuRang3SecondTirage($key['rapport_du_rang3_second_tirage'][$row]);
 
-            $tirage->setNombreDeGagnantAuRang4SecondTirage($row['nombre_de_gagnant_au_rang_4_second_tirage']);
-            $tirage->setRapportDuRang4SecondTirage($row['rapport_du_rang4_second_tirage']);
+            $tirage->setNombreDeGagnantAuRang4SecondTirage($key['nombre_de_gagnant_au_rang_4_second_tirage'][$row]);
+            $tirage->setRapportDuRang4SecondTirage($key['rapport_du_rang4_second_tirage'][$row]);
 
-            $tirage->setNumeroJokerplus($row['numero_jokerplus']);
-            $tirage->setDevise($row['devise']);
+            $tirage->setNumeroJokerplus($key['numero_jokerplus'][$row]);
+            $tirage->setDevise($key['devise'][$row]);
 
 
         }
