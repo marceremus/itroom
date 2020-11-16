@@ -16,7 +16,7 @@ class HomeController extends AbstractController
      */
     public function index(TirageRepository $tirageRepository): Response
     {
-
+dump(__DIR__);
         return $this->render('home/index.html.twig', [
             'controller_name' => 'HomeController',
             'tirages' => $tirageRepository->findAll()
