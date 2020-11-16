@@ -1,0 +1,214 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Tirage{% endblock %}
+
+{% block body %}
+    <h1>Tirage</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ tirage.id }}</td>
+            </tr>
+            <tr>
+                <th>Annee_numero_de_tirage</th>
+                <td>{{ tirage.anneeNumeroDeTirage ? tirage.anneeNumeroDeTirage|date('Y-m-d H:i:s') : '' }}</td>
+            </tr>
+            <tr>
+                <th>Jour_de_tirage</th>
+                <td>{{ tirage.jourDeTirage }}</td>
+            </tr>
+            <tr>
+                <th>Date_de_tirage</th>
+                <td>{{ tirage.dateDeTirage ? tirage.dateDeTirage|date('Y-m-d H:i:s') : '' }}</td>
+            </tr>
+            <tr>
+                <th>Date_de_forclusion</th>
+                <td>{{ tirage.dateDeForclusion ? tirage.dateDeForclusion|date('Y-m-d H:i:s') : '' }}</td>
+            </tr>
+            <tr>
+                <th>Boule_1</th>
+                <td>{{ tirage.boule1 }}</td>
+            </tr>
+            <tr>
+                <th>Boule_2</th>
+                <td>{{ tirage.boule2 }}</td>
+            </tr>
+            <tr>
+                <th>Boule_3</th>
+                <td>{{ tirage.boule3 }}</td>
+            </tr>
+            <tr>
+                <th>Boule_4</th>
+                <td>{{ tirage.boule4 }}</td>
+            </tr>
+            <tr>
+                <th>Boule_5</th>
+                <td>{{ tirage.boule5 }}</td>
+            </tr>
+            <tr>
+                <th>Numero_chance</th>
+                <td>{{ tirage.numeroChance }}</td>
+            </tr>
+            <tr>
+                <th>Combinaison_gagnante_en_ordre_croissant</th>
+                <td>{{ tirage.combinaisonGagnanteEnOrdreCroissant }}</td>
+            </tr>
+            <tr>
+                <th>Nombre_de_gagnant_au_rang1</th>
+                <td>{{ tirage.nombreDeGagnantAuRang1 ? 'Yes' : 'No' }}</td>
+            </tr>
+            <tr>
+                <th>Rapport_du_rang1</th>
+                <td>{{ tirage.rapportDuRang1 }}</td>
+            </tr>
+            <tr>
+                <th>Nombre_de_gagnant_au_rang2</th>
+                <td>{{ tirage.nombreDeGagnantAuRang2 }}</td>
+            </tr>
+            <tr>
+                <th>Rapport_du_rang2</th>
+                <td>{{ tirage.rapportDuRang2 }}</td>
+            </tr>
+            <tr>
+                <th>Nombre_de_gagnant_au_rang3</th>
+                <td>{{ tirage.nombreDeGagnantAuRang3 }}</td>
+            </tr>
+            <tr>
+                <th>Rapport_du_rang3</th>
+                <td>{{ tirage.rapportDuRang3 }}</td>
+            </tr>
+            <tr>
+                <th>Nombre_de_gagnant_au_rang4</th>
+                <td>{{ tirage.nombreDeGagnantAuRang4 }}</td>
+            </tr>
+            <tr>
+                <th>Rapport_du_rang4</th>
+                <td>{{ tirage.rapportDuRang4 }}</td>
+            </tr>
+            <tr>
+                <th>Nombre_de_gagnant_au_rang5</th>
+                <td>{{ tirage.nombreDeGagnantAuRang5 }}</td>
+            </tr>
+            <tr>
+                <th>Rapport_du_rang5</th>
+                <td>{{ tirage.rapportDuRang5 }}</td>
+            </tr>
+            <tr>
+                <th>Nombre_de_gagnant_au_rang6</th>
+                <td>{{ tirage.nombreDeGagnantAuRang6 }}</td>
+            </tr>
+            <tr>
+                <th>Rapport_du_rang6</th>
+                <td>{{ tirage.rapportDuRang6 }}</td>
+            </tr>
+            <tr>
+                <th>Nombre_de_gagnant_au_rang7</th>
+                <td>{{ tirage.nombreDeGagnantAuRang7 }}</td>
+            </tr>
+            <tr>
+                <th>Rapport_du_rang7</th>
+                <td>{{ tirage.rapportDuRang7 }}</td>
+            </tr>
+            <tr>
+                <th>Nombre_de_gagnant_au_rang8</th>
+                <td>{{ tirage.nombreDeGagnantAuRang8 }}</td>
+            </tr>
+            <tr>
+                <th>Rapport_du_rang8</th>
+                <td>{{ tirage.rapportDuRang8 }}</td>
+            </tr>
+            <tr>
+                <th>Nombre_de_gagnant_au_rang9</th>
+                <td>{{ tirage.nombreDeGagnantAuRang9 }}</td>
+            </tr>
+            <tr>
+                <th>Rapport_du_rang9</th>
+                <td>{{ tirage.rapportDuRang9 }}</td>
+            </tr>
+            <tr>
+                <th>Nombre_de_codes_gagnants</th>
+                <td>{{ tirage.nombreDeCodesGagnants }}</td>
+            </tr>
+            <tr>
+                <th>Rapport_codes_gagnants</th>
+                <td>{{ tirage.rapportCodesGagnants }}</td>
+            </tr>
+            <tr>
+                <th>Codes_gagnants</th>
+                <td>{{ tirage.codesGagnants }}</td>
+            </tr>
+            <tr>
+                <th>Boule_1_second_tirage</th>
+                <td>{{ tirage.boule1SecondTirage }}</td>
+            </tr>
+            <tr>
+                <th>Boule_2_second_tirage</th>
+                <td>{{ tirage.boule2SecondTirage }}</td>
+            </tr>
+            <tr>
+                <th>Boule_3_second_tirage</th>
+                <td>{{ tirage.boule3SecondTirage }}</td>
+            </tr>
+            <tr>
+                <th>Boule_4_second_tirage</th>
+                <td>{{ tirage.boule4SecondTirage }}</td>
+            </tr>
+            <tr>
+                <th>Boule_5_second_tirage</th>
+                <td>{{ tirage.boule5SecondTirage }}</td>
+            </tr>
+            <tr>
+                <th>Combinaison_gagnant_second_tirage_en_ordre_croissant</th>
+                <td>{{ tirage.combinaisonGagnantSecondTirageEnOrdreCroissant }}</td>
+            </tr>
+            <tr>
+                <th>Nombre_de_gagnant_au_rang_1_second_tirage</th>
+                <td>{{ tirage.nombreDeGagnantAuRang1SecondTirage }}</td>
+            </tr>
+            <tr>
+                <th>Rapport_du_rang1_second_tirage</th>
+                <td>{{ tirage.rapportDuRang1SecondTirage }}</td>
+            </tr>
+            <tr>
+                <th>Nombre_de_gagnant_au_rang_2_second_tirage</th>
+                <td>{{ tirage.nombreDeGagnantAuRang2SecondTirage }}</td>
+            </tr>
+            <tr>
+                <th>Rapport_du_rang2_second_tirage</th>
+                <td>{{ tirage.rapportDuRang2SecondTirage }}</td>
+            </tr>
+            <tr>
+                <th>Nombre_de_gagnant_au_rang_3_second_tirage</th>
+                <td>{{ tirage.nombreDeGagnantAuRang3SecondTirage }}</td>
+            </tr>
+            <tr>
+                <th>Rapport_du_rang3_second_tirage</th>
+                <td>{{ tirage.rapportDuRang3SecondTirage }}</td>
+            </tr>
+            <tr>
+                <th>Nombre_de_gagnant_au_rang_4_second_tirage</th>
+                <td>{{ tirage.nombreDeGagnantAuRang4SecondTirage }}</td>
+            </tr>
+            <tr>
+                <th>Rapport_du_rang4_second_tirage</th>
+                <td>{{ tirage.rapportDuRang4SecondTirage }}</td>
+            </tr>
+            <tr>
+                <th>Numero_jokerplus</th>
+                <td>{{ tirage.numeroJokerplus }}</td>
+            </tr>
+            <tr>
+                <th>Devise</th>
+                <td>{{ tirage.devise }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('tirage_index') }}">back to list</a>
+
+    <a href="{{ path('tirage_edit', {'id': tirage.id}) }}">edit</a>
+
+    {{ include('tirage/_delete_form.html.twig') }}
+{% endblock %}

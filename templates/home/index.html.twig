@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Home{% endblock %}
+
+{% block body %}
+<div class="container mt-5">
+    <div>
+        <h1>ItRoom - Loto</h1>
+    </div>
+    <div>
+        <div class="card mb-3">
+            <img src="{{ asset("libs/img/loto.png") }}" class="card-img-top" alt="image-loto">
+            <div class="card-body">
+                <h5 class="card-title">Loto</h5>
+                <p class="card-text">Pour ce test, nous te proposons de réaliser une petite application qui va :</p>
+                <ul>
+                    <li>stocker les résultats du Loto donné par la Française des jeux</li>
+                    <li>fournir une API pour savoir si on a gagné, ou non au dernier tirage en date (et uniquement cela, pas le montant du gain)</li>
+                </ul>
+                    Pour rappel au Loto on gagne dès lors qu'on a deux numéros, ou le numéro chance.
+                <p class="card-text"><small class="text-muted">Jouer </small></p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h2>Liste des tirages</h2>
+        <div>
+
+        {% for tirage in tirages %}
+            <p>Annee numero de tirage : {{ tirage.anneeNumeroDeTirage  ? tirage.anneeNumeroDeTirage |date('Y-m-d') : "" }}</p>
+
+            <p>Jour de tirage : {{ tirage.jourDeTirage }}</p>
+            <p>Boule 1 : {{ tirage.boule1 }}</p>
+            <p>Boule 2 : {{ tirage.boule2 }}</p>
+            <p>Boule 3 : {{ tirage.boule3 }}</p>
+            <p>Boule 4 : {{ tirage.boule4 }}</p>
+            <p>Boule 5 : {{ tirage.boule5 }}</p>
+        {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}

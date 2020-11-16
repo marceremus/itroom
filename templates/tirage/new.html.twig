@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Tirage{% endblock %}
+
+{% block body %}
+    <h1>Create new Tirage</h1>
+
+    {{ include('tirage/_form.html.twig') }}
+
+    <a href="{{ path('tirage_index') }}">back to list</a>
+{% endblock %}
