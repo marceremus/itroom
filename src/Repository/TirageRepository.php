@@ -50,7 +50,7 @@ class TirageRepository extends ServiceEntityRepository
     public function findFirst($limit)
     {
         return $this->createQueryBuilder('t')
-            //->orderBy('t.date_de_tirage', 'ASC')
+            ->orderBy('t.date_de_tirage', 'DESC')
             ->setMaxResults($limit)
             ->getQuery()
             ->getResult()

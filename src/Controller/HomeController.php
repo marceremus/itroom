@@ -2,12 +2,8 @@
 
 namespace App\Controller;
 
-use App\Entity\Tirage;
+
 use App\Repository\TirageRepository;
-use Doctrine\Persistence\ObjectManager;
-use http\Env\Request;
-use League\Csv\Reader;
-use PDO;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;

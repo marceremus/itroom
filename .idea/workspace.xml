@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f7167cd7-52ea-4d4a-816d-c7a3a05dde09" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/migrations/Version20201117125233.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20201117135317.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/tirage1.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Tirage.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Tirage.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Repository/TirageRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/TirageRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +143,9 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Controller" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -187,7 +183,7 @@
       <updated>1605538017990</updated>
       <workItem from="1605538019046" duration="7459000" />
       <workItem from="1605596599129" duration="1955000" />
-      <workItem from="1605599509136" duration="13759000" />
+      <workItem from="1605599509136" duration="14080000" />
     </task>
     <servers />
   </component>
