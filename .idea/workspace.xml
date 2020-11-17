@@ -2,17 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f7167cd7-52ea-4d4a-816d-c7a3a05dde09" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/migrations/Version20201117070900.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20201117074225.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20201117074440.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20201117080304.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20201117083858.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20201117083958.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20201117084033.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20201117084105.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20201117084155.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20201117084217.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20201117084238.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20201117084326.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20201117084357.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20201117084447.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20201117090003.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20201117090538.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/tirage.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataFixtures/tirage.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/tirage.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Tirage.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Tirage.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-    <execution />
+    <execution>
+      <executable path="composer" />
+    </execution>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -127,14 +151,18 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1kNPLHFVbEHN4Eo7TXDCxIHmF8o" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Controller" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -146,9 +174,18 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Controller" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/DataFixtures" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="phpunit.xml.dist" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner scope="XML" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -159,10 +196,33 @@
       <option name="presentableId" value="Default" />
       <updated>1605538017990</updated>
       <workItem from="1605538019046" duration="7459000" />
+      <workItem from="1605596599129" duration="1955000" />
+      <workItem from="1605599509136" duration="6332000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1416" y="456" key="#com.intellij.ide.util.MemberChooser" timestamp="1605600177830">
+      <screen x="0" y="22" width="2560" height="1418" />
+    </state>
+    <state x="1416" y="456" key="#com.intellij.ide.util.MemberChooser/0.22.2560.1418@0.22.2560.1418" timestamp="1605600177830" />
+    <state x="1382" y="486" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605601586667">
+      <screen x="0" y="22" width="2560" height="1418" />
+    </state>
+    <state x="1382" y="486" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.22.2560.1418@0.22.2560.1418" timestamp="1605601586667" />
+    <state x="1382" y="494" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605600497134">
+      <screen x="0" y="22" width="2560" height="1418" />
+    </state>
+    <state x="1382" y="494" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.22.2560.1418@0.22.2560.1418" timestamp="1605600497134" />
+    <state x="1391" y="653" key="ComposerInitDialogKey" timestamp="1605610800708">
+      <screen x="0" y="22" width="2560" height="1418" />
+    </state>
+    <state x="1391" y="653" key="ComposerInitDialogKey/0.22.2560.1418@0.22.2560.1418" timestamp="1605610800708" />
   </component>
 </project>

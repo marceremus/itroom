@@ -20,242 +20,242 @@ class Tirage
     private $id;
 
     /**
-     * @ORM\Column(type="datetime")
+     * @ORM\Column(type="string", length=200, nullable=true)
      */
     private $annee_numero_de_tirage;
 
     /**
-     * @ORM\Column(type="string", length=100)
+     * @ORM\Column(type="string", length=200, nullable=true)
      */
     private $jour_de_tirage;
 
     /**
-     * @ORM\Column(type="datetime")
+     * @ORM\Column(type="string", length=200, nullable=true)
      */
     private $date_de_tirage;
 
     /**
-     * @ORM\Column(type="datetime")
+     * @ORM\Column(type="string", length=200, nullable=true)
      */
     private $date_de_forclusion;
 
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="string", length=200, nullable=true)
      */
     private $boule_1;
 
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="string", length=200, nullable=true)
      */
     private $boule_2;
 
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="string", length=200, nullable=true)
      */
     private $boule_3;
 
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="string", length=200, nullable=true)
      */
     private $boule_4;
 
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="string", length=200, nullable=true)
      */
     private $boule_5;
 
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="string", length=200, nullable=true)
      */
     private $numero_chance;
 
     /**
-     * @ORM\Column(type="string", length=100)
+     * @ORM\Column(type="string", length=200, nullable=true)
      */
     private $combinaison_gagnante_en_ordre_croissant;
 
     /**
-     * @ORM\Column(type="boolean")
+     * @ORM\Column(type="string", length=200, nullable=true)
      */
     private $nombre_de_gagnant_au_rang1;
 
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="string", length=200, nullable=true)
      */
     private $rapport_du_rang1;
 
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="string", length=200, nullable=true)
      */
     private $nombre_de_gagnant_au_rang2;
 
     /**
-     * @ORM\Column(type="decimal", precision=10, scale=0)
+     * @ORM\Column(type="string", length=200, nullable=true)
      */
     private $rapport_du_rang2;
 
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="string", length=200, nullable=true)
      */
     private $nombre_de_gagnant_au_rang3;
 
     /**
-     * @ORM\Column(type="decimal", precision=10, scale=0)
+     * @ORM\Column(type="string", length=200, nullable=true)
      */
     private $rapport_du_rang3;
 
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="string", length=200, nullable=true)
      */
     private $nombre_de_gagnant_au_rang4;
 
     /**
-     * @ORM\Column(type="decimal", precision=10, scale=0)
+     * @ORM\Column(type="string", length=200, nullable=true)
      */
     private $rapport_du_rang4;
 
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="string", length=200, nullable=true)
      */
     private $nombre_de_gagnant_au_rang5;
 
     /**
-     * @ORM\Column(type="decimal", precision=10, scale=0)
+     * @ORM\Column(type="string", length=200, nullable=true)
      */
     private $rapport_du_rang5;
 
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="string", length=200, nullable=true)
      */
     private $nombre_de_gagnant_au_rang6;
 
     /**
-     * @ORM\Column(type="decimal", precision=10, scale=0)
+     * @ORM\Column(type="string", length=200, nullable=true)
      */
     private $rapport_du_rang6;
 
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="string", length=200, nullable=true)
      */
     private $nombre_de_gagnant_au_rang7;
 
     /**
-     * @ORM\Column(type="decimal", precision=10, scale=0)
+     * @ORM\Column(type="string", length=200, nullable=true)
      */
     private $rapport_du_rang7;
 
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="string", length=200, nullable=true)
      */
     private $nombre_de_gagnant_au_rang8;
 
     /**
-     * @ORM\Column(type="decimal", precision=10, scale=0)
+     * @ORM\Column(type="string", length=200, nullable=true)
      */
     private $rapport_du_rang8;
 
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="string", length=200, nullable=true)
      */
     private $nombre_de_gagnant_au_rang9;
 
     /**
-     * @ORM\Column(type="decimal", precision=10, scale=0)
+     * @ORM\Column(type="string", length=200, nullable=true)
      */
     private $rapport_du_rang9;
 
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="string", length=200, nullable=true)
      */
     private $nombre_de_codes_gagnants;
 
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="string", length=200, nullable=true)
      */
     private $rapport_codes_gagnants;
 
     /**
-     * @ORM\Column(type="string", length=100)
+     * @ORM\Column(type="string", length=200, nullable=true)
      */
     private $codes_gagnants;
 
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="string", length=200, nullable=true)
      */
     private $boule_1_second_tirage;
 
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="string", length=200, nullable=true)
      */
     private $boule_2_second_tirage;
 
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="string", length=200, nullable=true)
      */
     private $boule_3_second_tirage;
 
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="string", length=200, nullable=true)
      */
     private $boule_4_second_tirage;
 
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="string", length=200, nullable=true)
      */
     private $boule_5_second_tirage;
 
     /**
-     * @ORM\Column(type="string", length=100)
+     * @ORM\Column(type="string", length=200, nullable=true)
      */
     private $combinaison_gagnant_second_tirage_en_ordre_croissant;
 
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="string", length=200, nullable=true)
      */
     private $nombre_de_gagnant_au_rang_1_second_tirage;
 
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="string", length=200, nullable=true)
      */
     private $rapport_du_rang1_second_tirage;
 
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="string", length=200, nullable=true)
      */
     private $nombre_de_gagnant_au_rang_2_second_tirage;
 
     /**
-     * @ORM\Column(type="decimal", precision=10, scale=0)
+     * @ORM\Column(type="string", length=200, nullable=true)
      */
     private $rapport_du_rang2_second_tirage;
 
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="string", length=200, nullable=true)
      */
     private $nombre_de_gagnant_au_rang_3_second_tirage;
 
     /**
-     * @ORM\Column(type="decimal", precision=10, scale=0)
+     * @ORM\Column(type="string", length=200, nullable=true)
      */
     private $rapport_du_rang3_second_tirage;
 
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="string", length=200, nullable=true)
      */
     private $nombre_de_gagnant_au_rang_4_second_tirage;
 
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="string", length=200, nullable=true)
      */
     private $rapport_du_rang4_second_tirage;
 
     /**
-     * @ORM\Column(type="string", length=100)
+     * @ORM\Column(type="string", length=200, nullable=true)
      */
     private $numero_jokerplus;
 
     /**
-     * @ORM\Column(type="string", length=10)
+     * @ORM\Column(type="string", length=200, nullable=true)
      */
     private $devise;
 
