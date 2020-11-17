@@ -7,6 +7,7 @@ use App\Repository\TirageRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 use phpDocumentor\Reflection\Types\Collection;
+use Symfony\Component\Validator\Constraints\Date;
 
 /**
  * @ORM\Entity(repositoryClass=TirageRepository::class)
@@ -32,12 +33,12 @@ class Tirage
     private $jour_de_tirage;
 
     /**
-     * @ORM\Column(type="string", length=200, nullable=true)
+     * @ORM\Column(type="date",  nullable=true)
      */
     private $date_de_tirage;
 
     /**
-     * @ORM\Column(type="string", length=200, nullable=true)
+     * @ORM\Column(type="date",  nullable=true)
      */
     private $date_de_forclusion;
 

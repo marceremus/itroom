@@ -3,6 +3,7 @@
 namespace App\DataFixtures;
 
 use App\Entity\Tirage;
+use DateTime;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Persistence\ObjectManager;
 use League\Csv\Reader;
@@ -16,12 +17,12 @@ class AppFixtures extends Fixture
         $csv->setDelimiter(';');
         $results = $csv->fetchAssoc();
 
-        foreach ($results as $row){
+        foreach ($results as $row) {
             $tirage = new Tirage();
             $tirage->setAnneeNumeroDeTirage($row["annee_numero_de_tirage"]);
             $tirage->setJourDeTirage($row["jour_de_tirage"]);
-            $tirage->setDateDeTirage($row["date_de_tirage"]);
-            $tirage->setDateDeForclusion($row["date_de_forclusion"]);
+            $tirage->setDateDeTirage(date_create_from_format("d/m/Y", $row["date_de_tirage"]));
+            $tirage->setDateDeForclusion(date_create_from_format("d/m/Y", $row["date_de_forclusion"]));
             $tirage->setBoule1(intval($row["boule_1"]));
             $tirage->setBoule2(intval($row["boule_2"]));
             $tirage->setBoule3(intval($row["boule_3"]));
@@ -84,7 +85,6 @@ class AppFixtures extends Fixture
 
             $tirage->setNumeroJokerplus($row['numero_jokerplus']);
             $tirage->setDevise($row['devise']);
-
 
 
             $manager->persist($tirage);

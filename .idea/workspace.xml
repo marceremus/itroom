@@ -2,23 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f7167cd7-52ea-4d4a-816d-c7a3a05dde09" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/config/packages/api_platform.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/nelmio_cors.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/routes/api_platform.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DataFixtures/tirage1.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/itroom.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/itroom.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20201117125233.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20201117135317.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/tirage1.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/tirage.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Tirage.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Tirage.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Repository/TirageRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/TirageRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +151,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/DataFixtures" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Controller" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -172,8 +164,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/DataFixtures" />
       <recent name="$PROJECT_DIR$/src/Controller" />
+      <recent name="$PROJECT_DIR$/src/DataFixtures" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/DataFixtures" />
@@ -195,7 +187,7 @@
       <updated>1605538017990</updated>
       <workItem from="1605538019046" duration="7459000" />
       <workItem from="1605596599129" duration="1955000" />
-      <workItem from="1605599509136" duration="8995000" />
+      <workItem from="1605599509136" duration="13759000" />
     </task>
     <servers />
   </component>
@@ -206,10 +198,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1416" y="456" key="#com.intellij.ide.util.MemberChooser" timestamp="1605600177830">
+    <state x="1416" y="456" key="#com.intellij.ide.util.MemberChooser" timestamp="1605617542387">
       <screen x="0" y="22" width="2560" height="1418" />
     </state>
-    <state x="1416" y="456" key="#com.intellij.ide.util.MemberChooser/0.22.2560.1418@0.22.2560.1418" timestamp="1605600177830" />
+    <state x="1416" y="456" key="#com.intellij.ide.util.MemberChooser/0.22.2560.1418@0.22.2560.1418" timestamp="1605617542387" />
     <state x="1382" y="486" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605601586667">
       <screen x="0" y="22" width="2560" height="1418" />
     </state>
@@ -222,5 +214,9 @@
       <screen x="0" y="22" width="2560" height="1418" />
     </state>
     <state x="1391" y="653" key="ComposerInitDialogKey/0.22.2560.1418@0.22.2560.1418" timestamp="1605610800708" />
+    <state x="1282" y="449" key="NewPhpClassDialog" timestamp="1605620554800">
+      <screen x="0" y="22" width="2560" height="1418" />
+    </state>
+    <state x="1282" y="449" key="NewPhpClassDialog/0.22.2560.1418@0.22.2560.1418" timestamp="1605620554800" />
   </component>
 </project>
