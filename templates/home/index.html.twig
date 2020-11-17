@@ -22,6 +22,66 @@
                 </div>
             </div>
         </div>
+
+        <div class="mt-5 mb-5">
+            <h4>Saisissez vous chiifres</h4>
+            <div class="row">
+                <div class="col-2">
+                    <div class="form-group">
+                        <label for="chiffre1">Chiffre 1</label>
+                        <select class="form-control" id="chiffre1">
+                            {% for i in 0..50 %}
+                                <option value="{{ i }}">{{ i }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="form-group">
+                        <label for="chiffre2">Chiffre 2</label>
+                        <select class="form-control" id="chiffre2">
+                            {% for i in 0..50 %}
+                                <option value="{{ i }}">{{ i }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="form-group">
+                        <label for="chiffre3">Chiffre 3</label>
+                        <select class="form-control" id="chiffre3">
+                            {% for i in 0..50 %}
+                                <option value="{{ i }}">{{ i }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="form-group">
+                        <label for="chiffre4">Chiffre 4</label>
+                        <select class="form-control" id="chiffre4">
+                            {% for i in 0..50 %}
+                                <option value="{{ i }}">{{ i }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="form-group">
+                        <label for="chiffre5">Chiffre 5</label>
+                        <select class="form-control" id="chiffre5">
+                            {% for i in 0..50 %}
+                                <option value="{{ i }}">{{ i }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button class="btn btn-success">J'ai gagné? </button>
+            </div>
+        </div>
+
         <div>
             <h2>Liste des tirages</h2>
             <div class="mt-5">
@@ -35,6 +95,7 @@
                             <p>Boule 3 : {{ tirage.boule3 }}</p>
                             <p>Boule 4 : {{ tirage.boule4 }}</p>
                             <p>Boule 5 : {{ tirage.boule5 }}</p>
+                            <p>Combinaison gagnante : {{ tirage.combinaisonGagnanteEnOrdreCroissant }}</p>
                             <hr>
                         </div>
                     {% endfor %}
@@ -42,4 +103,37 @@
             </div>
         </div>
     </div>
+{% endblock %}
+
+{% block javascripts %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.js" integrity="sha512-nDf/JmbKrXtC7NfuMoUJPoUCqV57cMTae3cTHko8QChe+UlvfPKE05BHXBHtezGdM0Oq2u7ynYwDWK9r67Uyeg==" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function(){
+        var chiffre1 = $("#chiffre1 option:selected");
+        var chiffre2 = $("#chiffre2 option:selected");
+        var chiffre3 = $("#chiffre3 option:selected");
+        var chiffre4 = $("#chiffre4 option:selected");
+        var chiffre5 = $("#chiffre5 option:selected");
+
+        $.ajax({
+            url: "",
+            type: "POST",
+            dataType: "JSON",
+            data: {
+                "chiffre1" : chiffre1,
+                "chiffre2" : chiffre2,
+                "chiffre3" : chiffre3,
+                "chiffre4" : chiffre4,
+                "chiffre5" : chiffre5,
+            },
+            success:function(data){
+                console.log(data);
+            },
+            error: function(e){
+                console.log(e);
+            }
+        })
+    })
+
+</script>
 {% endblock %}

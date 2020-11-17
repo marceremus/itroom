@@ -5,11 +5,16 @@ namespace App\Entity;
 use ApiPlatform\Core\Annotation\ApiResource;
 use App\Repository\TirageRepository;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Serializer\Annotation\Groups;
 
 
 /**
  * @ORM\Entity(repositoryClass=TirageRepository::class)
- * @ApiResource()
+ * @ApiResource(
+ *    collectionOperations={"get"},
+ *    itemOperations={"get"},
+ *
+ * )
  */
 class Tirage
 {
@@ -32,6 +37,7 @@ class Tirage
 
     /**
      * @ORM\Column(type="date",  nullable=true)
+     * @Groups("tirage:read")
      */
     private $date_de_tirage;
 
