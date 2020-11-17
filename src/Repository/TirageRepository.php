@@ -47,4 +47,13 @@ class TirageRepository extends ServiceEntityRepository
         ;
     }
     */
+    public function findFirst($limit)
+    {
+        return $this->createQueryBuilder('t')
+            ->orderBy('t.annee_numero_de_tirage', 'ASC')
+            ->setMaxResults($limit)
+            ->getQuery()
+            ->getResult()
+            ;
+    }
 }

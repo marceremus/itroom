@@ -12,7 +12,7 @@ class AppFixtures extends Fixture
     public function load(ObjectManager $manager)
     {
 
-        $csv = Reader::createFromPath(__DIR__.'/tirage.csv','r');
+        $csv = Reader::createFromPath(__DIR__.'/tirage1.csv','r');
         $csv->setDelimiter(';');
         $results = $csv->fetchAssoc();
 

@@ -19,10 +19,11 @@ class HomeController extends AbstractController
      */
     public function index(TirageRepository $tirageRepository): Response
     {
+        $limite = 10;
 
         return $this->render('home/index.html.twig', [
             'controller_name' => 'HomeController',
-            'tirages' => $tirageRepository->findAll()
+            'tirages' => $tirageRepository->findFirst($limite)
         ]);
     }
 }

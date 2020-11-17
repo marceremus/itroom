@@ -2,30 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f7167cd7-52ea-4d4a-816d-c7a3a05dde09" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/migrations/Version20201117070900.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20201117074225.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20201117074440.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20201117080304.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20201117083858.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20201117083958.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20201117084033.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20201117084105.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20201117084155.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20201117084217.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20201117084238.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20201117084326.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20201117084357.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20201117084447.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20201117090003.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20201117090538.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/tirage.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/api_platform.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/nelmio_cors.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/routes/api_platform.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataFixtures/tirage1.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/itroom.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/itroom.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/tirage.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataFixtures/tirage.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/tirage.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Tirage.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Tirage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/TirageRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/TirageRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,6 +141,10 @@
       <path value="$PROJECT_DIR$/vendor/doctrine/data-fixtures" />
       <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-fixtures-bundle" />
       <path value="$PROJECT_DIR$/vendor/league/csv" />
+      <path value="$PROJECT_DIR$/vendor/nelmio/cors-bundle" />
+      <path value="$PROJECT_DIR$/vendor/api-platform/core" />
+      <path value="$PROJECT_DIR$/vendor/willdurand/negotiation" />
+      <path value="$PROJECT_DIR$/vendor/fig/link-util" />
     </include_path>
   </component>
   <component name="ProjectId" id="1kNPLHFVbEHN4Eo7TXDCxIHmF8o" />
@@ -162,7 +159,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Controller" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/DataFixtures" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -175,6 +172,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/DataFixtures" />
       <recent name="$PROJECT_DIR$/src/Controller" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -197,7 +195,7 @@
       <updated>1605538017990</updated>
       <workItem from="1605538019046" duration="7459000" />
       <workItem from="1605596599129" duration="1955000" />
-      <workItem from="1605599509136" duration="6332000" />
+      <workItem from="1605599509136" duration="8995000" />
     </task>
     <servers />
   </component>
