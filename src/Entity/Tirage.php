@@ -72,7 +72,7 @@ class Tirage
     private $boule_5;
 
     /**
-     * @ORM\Column(type="string", length=200, nullable=true)
+     * @ORM\Column(type="integer")
      */
     private $numero_chance;
 
@@ -444,6 +444,8 @@ class Tirage
     {
         $this->numero_chance = $numero_chance;
     }
+
+
 
     /**
      * @return mixed

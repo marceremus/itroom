@@ -2,8 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f7167cd7-52ea-4d4a-816d-c7a3a05dde09" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/files/tirage1.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Commande/CsvImportCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/AjaxRequestsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/itroom.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/itroom.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Tirage.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Tirage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/TirageRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/TirageRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/home/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -145,9 +156,9 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Controller" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/var" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -160,10 +171,16 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/var" />
+      <recent name="$PROJECT_DIR$/var/data" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/Controller" />
       <recent name="$PROJECT_DIR$/src/DataFixtures" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/var" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/DataFixtures" />
     </key>
   </component>
@@ -184,6 +201,9 @@
       <workItem from="1605538019046" duration="7459000" />
       <workItem from="1605596599129" duration="1955000" />
       <workItem from="1605599509136" duration="18523000" />
+      <workItem from="1606463031522" duration="3557000" />
+      <workItem from="1606468908385" duration="183000" />
+      <workItem from="1606469124030" duration="25295000" />
     </task>
     <servers />
   </component>
@@ -194,25 +214,44 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1416" y="456" key="#com.intellij.ide.util.MemberChooser" timestamp="1605617542387">
-      <screen x="0" y="22" width="2560" height="1418" />
+    <state x="797" y="293" key="#com.intellij.ide.util.MemberChooser" timestamp="1606486082168">
+      <screen x="0" y="25" width="1440" height="875" />
     </state>
     <state x="1416" y="456" key="#com.intellij.ide.util.MemberChooser/0.22.2560.1418@0.22.2560.1418" timestamp="1605617542387" />
+    <state x="797" y="293" key="#com.intellij.ide.util.MemberChooser/0.25.1440.875@0.25.1440.875" timestamp="1606486082168" />
     <state x="1382" y="486" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605601586667">
       <screen x="0" y="22" width="2560" height="1418" />
     </state>
     <state x="1382" y="486" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.22.2560.1418@0.22.2560.1418" timestamp="1605601586667" />
-    <state x="1382" y="494" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605600497134">
-      <screen x="0" y="22" width="2560" height="1418" />
+    <state x="777" y="316" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1606485450731">
+      <screen x="0" y="25" width="1440" height="875" />
     </state>
     <state x="1382" y="494" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.22.2560.1418@0.22.2560.1418" timestamp="1605600497134" />
+    <state x="777" y="316" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.25.1440.875@0.25.1440.875" timestamp="1606485450731" />
     <state x="1391" y="653" key="ComposerInitDialogKey" timestamp="1605610800708">
       <screen x="0" y="22" width="2560" height="1418" />
     </state>
     <state x="1391" y="653" key="ComposerInitDialogKey/0.22.2560.1418@0.22.2560.1418" timestamp="1605610800708" />
-    <state x="1282" y="449" key="NewPhpClassDialog" timestamp="1605620554800">
-      <screen x="0" y="22" width="2560" height="1418" />
+    <state x="721" y="288" key="NewPhpClassDialog" timestamp="1606485188938">
+      <screen x="0" y="25" width="1440" height="875" />
     </state>
     <state x="1282" y="449" key="NewPhpClassDialog/0.22.2560.1418@0.22.2560.1418" timestamp="1605620554800" />
+    <state x="721" y="288" key="NewPhpClassDialog/0.25.1440.875@0.25.1440.875" timestamp="1606485188938" />
+    <state x="458" y="271" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog" timestamp="1606469525519">
+      <screen x="0" y="25" width="1440" height="875" />
+    </state>
+    <state x="458" y="271" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog/0.25.1440.875@0.25.1440.875" timestamp="1606469525519" />
+    <state x="106" y="60" width="1266" height="705" key="find.popup" timestamp="1606486693248">
+      <screen x="0" y="25" width="1440" height="875" />
+    </state>
+    <state x="106" y="60" width="1266" height="705" key="find.popup/0.25.1440.875@0.25.1440.875" timestamp="1606486693248" />
+    <state x="385" y="214" width="670" height="676" key="search.everywhere.popup" timestamp="1606486685036">
+      <screen x="0" y="25" width="1440" height="875" />
+    </state>
+    <state x="385" y="214" width="670" height="676" key="search.everywhere.popup/0.25.1440.875@0.25.1440.875" timestamp="1606486685036" />
+    <state x="450" y="374" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1606471026493">
+      <screen x="0" y="25" width="1440" height="875" />
+    </state>
+    <state x="450" y="374" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.25.1440.875@0.25.1440.875" timestamp="1606471026493" />
   </component>
 </project>

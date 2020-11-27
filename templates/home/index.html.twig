@@ -28,6 +28,20 @@
             <div class="row">
                 <div class="col-2">
                     <div class="form-group">
+                        <label for="chiffre1">Date de tirage</label>
+                        <select class="form-control" id="dateTirage">
+
+                            {% for dateTir in datetirage %}
+                                {% for tirage in dateTir %}
+                                    <option value="{{ tirage|date("Y-m-d") }}">{{ tirage|date("Y-m-d") }}</option>
+                                {% endfor %}
+                            {% endfor %}
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-2">
+                    <div class="form-group">
                         <label for="chiffre1">Chiffre 1</label>
                         <select class="form-control" id="chiffre1">
                             {% for i in 0..50 %}
@@ -78,7 +92,16 @@
                 </div>
             </div>
             <div>
-                <button class="btn btn-success">J'ai gagné? </button>
+                <button class="btn btn-success" id="gagner">J'ai gagné? </button>
+            </div>
+        </div>
+
+        <div class="mt-5 mb-5">
+            <div class="row d-none alert alert-success" id="sucess-gagne">
+                <p class="h2">Super! Vous avez gagner </p>
+            </div>
+            <div class="row d-none alert alert-danger" id="echec-gagne">
+                <p class="h2">Domage, une prochaine fois ...</p>
             </div>
         </div>
 
@@ -106,34 +129,47 @@
 {% endblock %}
 
 {% block javascripts %}
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.js" integrity="sha512-nDf/JmbKrXtC7NfuMoUJPoUCqV57cMTae3cTHko8QChe+UlvfPKE05BHXBHtezGdM0Oq2u7ynYwDWK9r67Uyeg==" crossorigin="anonymous"></script>
-<script>
-    $(document).ready(function(){
-        var chiffre1 = $("#chiffre1 option:selected");
-        var chiffre2 = $("#chiffre2 option:selected");
-        var chiffre3 = $("#chiffre3 option:selected");
-        var chiffre4 = $("#chiffre4 option:selected");
-        var chiffre5 = $("#chiffre5 option:selected");
 
-        $.ajax({
-            url: "",
-            type: "POST",
-            dataType: "JSON",
-            data: {
-                "chiffre1" : chiffre1,
-                "chiffre2" : chiffre2,
-                "chiffre3" : chiffre3,
-                "chiffre4" : chiffre4,
-                "chiffre5" : chiffre5,
-            },
-            success:function(data){
-                console.log(data);
-            },
-            error: function(e){
-                console.log(e);
-            }
+    <script>
+        $(document).ready(function(){
+
+            $("#gagner").on("click", function(){
+
+                var chiffre1 = $("#chiffre1 option:selected").val();
+                var chiffre2 = $("#chiffre2 option:selected").val();
+                var chiffre3 = $("#chiffre3 option:selected").val();
+                var chiffre4 = $("#chiffre4 option:selected").val();
+                var chiffre5 = $("#chiffre5 option:selected").val();
+                var dateTirage = $("#dateTirage option:selected").val();
+
+
+                $.ajax({
+                    url: "{{ path('gagner') }}",
+                    type: "POST",
+                    dataType: "JSON",
+                    async: true,
+                    data: {
+                        "chiffre1" : chiffre1,
+                        "chiffre2" : chiffre2,
+                        "chiffre3" : chiffre3,
+                        "chiffre4" : chiffre4,
+                        "chiffre5" : chiffre5,
+                        "dateTirage" : dateTirage,
+                    }
+                }).done(function(data){
+                    if(data.message == 'ok'){
+                        $("#sucess-gagne").removeClass("d-none");
+                        $("#echec-gagne").addClass("d-none");
+                    }else{
+                        $("#sucess-gagne").addClass("d-none");
+                        $("#echec-gagne").removeClass("d-none");
+                    }
+
+                }).fail(function(e){
+                    console.log("error ajax");
+                });
+
+            })
         })
-    })
-
-</script>
+    </script>
 {% endblock %}

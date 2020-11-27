@@ -56,4 +56,25 @@ class TirageRepository extends ServiceEntityRepository
             ->getResult()
             ;
     }
+
+    public function getDateTirage()
+    {
+        return $this->createQueryBuilder('t')
+            ->select('t.date_de_tirage')
+            ->orderBy('t.date_de_tirage', 'DESC')
+            ->getQuery()
+            ->getResult()
+            ;
+    }
+
+    public function getCombinaisonGagnante($dateTirage)
+    {
+        return $this->createQueryBuilder('t')
+            ->select('t.combinaison_gagnante_en_ordre_croissant')
+            ->andWhere('t.date_de_tirage = :dateTirage')
+            ->setParameter("dateTirage", $dateTirage)
+            ->getQuery()
+            ->getResult()
+            ;
+    }
 }
